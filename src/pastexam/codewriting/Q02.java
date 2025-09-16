@@ -17,6 +17,22 @@ public class Q02 {
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
+		System.out.println("Please enter height");
+		double height = in.nextDouble();
+		System.out.println("Please enter width");
+		double width = in.nextDouble();
+		while(height * width != 0) {
+			System.out.println(height * width);
+			System.out.println("Please enter height");
+		 height = in.nextDouble();
+		System.out.println("Please enter width");
+		 width = in.nextDouble();
+			
+		
+			
+		}
+		in.close();
+        System.out.println("Area is 0");
 		
 	}
 }

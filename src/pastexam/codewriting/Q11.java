@@ -31,6 +31,26 @@ public class Q11 {
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
+		System.out.println("Please type in an integer");
+		int input = in.nextInt();
+		int max = input + 10;
+		int min = input - 10;
+		int randomNumber = (int)(Math.random()*21) + min;
+		System.out.println("Please guess a number between " + min + " and " + max);
+		int guess = in.nextInt();
+		while( guess != randomNumber){
+			System.out.println("Please guess again");
+			guess = in.nextInt();
+		}
+		System.out.println("You win!");
+		in.close();
+		
+
+		
+
+
+
+
 		
 		
 	}

@@ -21,6 +21,23 @@ public class Q03 {
 		System.out.println("Enter a positive integer: ");
 		int n = in.nextInt();
 		in.close();
+		if(n % 15 ==0){
+			System.out.println("FizzBuzz");
+
+		}
+		else if (n % 5 == 0){
+			System.out.println("Fizz");
+
+		}
+		else if (n % 3 == 0){
+			System.out.println("Buzz");
+			
+		}
+		else{
+			System.out.println(n);
+		}
+
+
 
 	}
 }

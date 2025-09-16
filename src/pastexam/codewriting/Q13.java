@@ -37,6 +37,19 @@ public class Q13 {
 		int m = in.nextInt();
 		
 		//your code here
-
+		int i = 1;
+		while(i <= 5){
+            System.out.println("Please enter " + m + " * " + i);
+			int result = in.nextInt();
+		    while (result != i * m){
+				System.out.println("Incorrect!");
+				result = in.nextInt();
+			}
+            i++;
+		
+		}
+		System.out.println("Well done!");
+		in.close();
+        
 	}
 }

@@ -28,6 +28,16 @@ public class Q09 {
 		System.out.println("Enter a value between 1-100 (inclusive): ");
 		int threshold = in.nextInt();
 		in.close();
+		int count = 0;
+		for (int i = 0; i < quantity; i++){
+			int value = (int)(Math.random() * 100) + 1;
+			if(value > threshold){
+				count ++;
+			}
+		}
+		System.out.println(count);
+		System.out.println((double)count / quantity * 100 + "%" );
+
 		
 	}
 }
